@@ -5,12 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './components/navbar/Navbar';
 import Cover from './components/cover/Cover'
 import ProductComponent from './components/products/Product';
+import About from './components/about/About'
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Cover />
     <ProductComponent />
+    <About />
   </React.StrictMode>,
   document.getElementById('root')
 );

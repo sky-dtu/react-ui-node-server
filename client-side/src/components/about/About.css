@@ -1,0 +1,38 @@
+.comp-body {
+    background-color: rgb(219, 218, 218);
+    padding: 50px;
+}
+
+.content-elem {
+    /* border: 2px solid green; */
+    margin: auto 60px;
+}
+
+.h3-about {
+    margin: 50px;  
+    font-weight: bolder;
+    text-align: left;
+}
+
+
+.p-about {
+    margin: 50px;  
+    text-align: left;
+}
+
+
+
+.pic-elem {
+    /* border: 2px solid green; */
+    /* margin: auto 60px; */
+}
+
+
+.img-elem {
+    /* border: 2px solid green; */
+    /* margin: auto 60px; */
+    /* size: 500; */
+    width: fit-content;
+    /* height: auto; */
+    border-radius: 10px;
+}
