@@ -1,19 +1,65 @@
-import './Product.css'
+import React, { Component } from 'react';
+import './Product.css';
 
-function Product() {
+class ProductComponent extends Component {
+
+  state = {
+    data : []
+  };
+
+  componentDidMount() {
+    this.callBackendAPI()
+      // .then(res => this.setState({ data: res.express }))
+      // .then(res => this.setState({ data: res[0].id }))
+      .then(res => {
+        const products = res.map( product => ({
+          id    : product.id,
+          url   : product.url,
+          title   : product.productTitle,
+          desc   : product.productDesc
+        }));
+        console.log(products);
+
+        this.setState({ data : [...products] });
+        console.log(this.state.data);
+      })
+      .catch(err => console.log(err));
+  }
+
+  callBackendAPI = async () => {
+    const response = await fetch('/api');
+    const body = await response.json();
+
+    if (response.status !== 200) {
+      throw Error(body.message) 
+    }
+    return body;
+  };
+
+  render() {
+    const arr = this.state.data;
+
     return (
-      <div>
-          <h2 className="">OUR PRODUCT</h2>
-          <div className="productgrid grid">
-            <div className="row">
-                <p className="eachProduct col text-center">red</p>
-                <p className="eachProduct col text-center">red</p>
-                <p className="eachProduct col text-center">red</p>
-            </div>
-          </div>
+      <div className="grid">
+        <h2>OUR PRODUCT</h2>
+        <div className="row product-grid">
+          {arr.map(prod => {
+            
+            
+            const html = 
+              <div className="col eachProduct">
+                <img src={prod.url} />
+                <h3>{prod.title}</h3>
+                <p>{prod.desc}</p>
+              </div>;
+            
+            
+            return html;
+          })}  
+        </div>
       </div>
     );
+  }
 }
 
-export default Product;
-  
+export default ProductComponent;

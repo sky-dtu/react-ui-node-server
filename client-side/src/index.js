@@ -4,13 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/navbar/Navbar';
 import Cover from './components/cover/Cover'
-import Product from './components/products/Product';
+import ProductComponent from './components/products/Product';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Cover />
-    <Product />
+    <ProductComponent />
   </React.StrictMode>,
   document.getElementById('root')
 );
