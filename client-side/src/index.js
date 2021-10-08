@@ -6,6 +6,8 @@ import Navbar from './components/navbar/Navbar';
 import Cover from './components/cover/Cover'
 import ProductComponent from './components/products/Product';
 import About from './components/about/About'
+import Review from './components/reviews/Review';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +15,7 @@ ReactDOM.render(
     <Cover />
     <ProductComponent />
     <About />
+    <Review />
   </React.StrictMode>,
   document.getElementById('root')
 );

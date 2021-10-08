@@ -1,0 +1,44 @@
+.review-comp {
+    margin: 10px 50px;
+}
+
+.review-comp-row {
+    /* border: 2px solid blue; */
+}
+
+.arrow {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+
+
+.size-arrow {
+    width: auto;
+    height: 70px;
+}
+
+.left-arrow {
+    align-items: right;
+    text-align: right;
+}
+
+.pic {
+    margin: auto 20px;
+}
+
+.pic-elem {
+    /* border: 2px solid green; */
+    border-radius: 50%;
+    height: 200px;
+    width: auto;
+}
+
+
+.content-col {
+    margin: auto 20px;
+}
+
+.h3-review {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
