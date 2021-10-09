@@ -7,6 +7,7 @@ import Cover from './components/cover/Cover'
 import ProductComponent from './components/products/Product';
 import About from './components/about/About'
 import Review from './components/reviews/Review';
+import Subscribe from './components/subscribe/Subscribe';
 
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
     <ProductComponent />
     <About />
     <Review />
+    <Subscribe />
   </React.StrictMode>,
   document.getElementById('root')
 );
