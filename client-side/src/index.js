@@ -8,7 +8,9 @@ import ProductComponent from './components/products/Product';
 import About from './components/about/About'
 import Review from './components/reviews/Review';
 import Subscribe from './components/subscribe/Subscribe';
+import Footer from './components/footer/Footer';
 
+setTimeout(function(){ alert("Hope you liked this Assignment"); }, 7000);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +20,7 @@ ReactDOM.render(
     <About />
     <Review />
     <Subscribe />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

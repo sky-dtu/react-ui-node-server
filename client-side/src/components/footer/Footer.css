@@ -1,0 +1,38 @@
+.footer-comp {
+    margin: 20px 200px;
+    padding: 20px 50px;
+    /* border: 2px solid red; */
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+
+.about-company-Footer {
+    padding: 0 50px;
+    padding-right: 80px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0.5px;
+}
+
+.icon-div-Footer {
+    margin-top: 20px;
+}
+
+.img-icon-Footer {
+    height: 30px;
+    margin: 5px;
+    width: auto;
+}
+
+.copyright-footer {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    color: blanchedalmond;
+}

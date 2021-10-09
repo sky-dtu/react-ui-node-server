@@ -50,7 +50,7 @@ class ProductComponent extends Component {
               <div className="col eachProduct">
                 <img src={prod.url} />
                 <h3>{prod.title}</h3>
-                <p>{prod.desc}</p>
+                <p className="p-Product">{prod.desc}</p>
               </div>;
             
             

@@ -2,10 +2,6 @@
     margin: 10px 50px;
 }
 
-.review-comp-row {
-    /* border: 2px solid blue; */
-}
-
 .arrow {
     /* border: 1px solid red; */
     margin-top: 50px;
@@ -41,4 +37,10 @@
 .h3-review {
     margin-top: 20px;
     margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.p-review {
+    font-size: 20px;
+    font-weight: 300;
 }
